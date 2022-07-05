@@ -43,7 +43,7 @@ function currentCity(event) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = searchCity.value;
   let apiKey = "be3ab8e09c2856ab67e7aa09558d9610";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
 let form = document.querySelector("#change-city");
