@@ -35,4 +35,4 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-h3.innerHTML = `Today is ${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}, ${hours}:${minutes}`;
+h3.innerHTML = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}, ${hours}:${minutes}`;
