@@ -36,6 +36,10 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 h3.innerHTML = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}, ${hours}:${minutes}`;
+
+function displayTemp(response) {
+  let currentTemp = document.querySelector();
+}
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -61,7 +65,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "be3ab8e09c2856ab67e7aa09558d961";
+  let apiKey = "be3ab8e09c2856abe3ab8e09c2856ab67e7aa09558d9610";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
