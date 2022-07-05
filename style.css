@@ -1,0 +1,6 @@
+.weatherWrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
