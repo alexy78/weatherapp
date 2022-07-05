@@ -1,7 +1,8 @@
 body {
-  background-color: aqua;
+  background-color: #0aa1dd;
 }
 .weatherWrapper {
+  background-color: #e8f9fd;
   max-width: 600px;
   margin: 30px auto;
   border: 1px solid #dadde1;
