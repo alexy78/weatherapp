@@ -48,3 +48,22 @@ function currentCity(event) {
 }
 let form = document.querySelector("#change-city");
 form.addEventListener("submit", currentCity);
+function showTemperature(response) {
+  let temperature = document.querySelector("#temperature");
+  let description = document.querySelector("#description");
+  let humidity = document.querySelector("#humidity");
+  let wind = document.querySelector("#wind");
+  let icon = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
+  temperature.innerHTML = Math.round(celsiusTemperature);
+  description.innerHTML = response.data.weather[0].description;
+  humidity.innerHTML = response.data.main.humidity;
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+}
