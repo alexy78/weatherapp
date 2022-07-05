@@ -50,7 +50,7 @@ function toSubmit(event) {
   searchForCity(cityinput.value);
 }
 let cityForm = document.querySelector("change-city");
-cityForm = addEventListener("submit", toSubmit);
+cityForm = addEventListener("search", toSubmit);
 function searchForCity(city) {
   let apiKey = "be3ab8e09c2856ab67e7aa09558d9610";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
