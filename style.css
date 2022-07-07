@@ -1,10 +1,23 @@
 body {
   background-color: #c4dfaa;
 }
+ul {
+  margin: 5px;
+  padding: 4px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+}
 .weatherWrapper {
-  background-color: #73a9ad;
+  background-color: #d3ebcd;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 10px auto;
   border: 1px solid #dadde1;
   border-radius: 20px;
 }
@@ -15,5 +28,6 @@ body {
 }
 
 .link {
-  text-align: center;
+  padding: 320px;
+  font-size: 11px;
 }
